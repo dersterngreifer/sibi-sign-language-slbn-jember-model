@@ -4,16 +4,18 @@ import numpy as np
 import mediapipe as mp
 import tensorflow as tf
 import os
+from Config import actions
 
 # ==================== CONFIGURATION ====================
 # PASTIKAN JUMLAH KATA SAMA DENGAN SAAT TRAINING!
 # Jika training cuma ['Saya', 'Buah'], hapus 'Makan' dari sini.
-ACTIONS = np.array(['Saya', 'Buah', 'Makan']) 
+ACTIONS = actions
 COLORS = [(245,117,16), (117,245,16)] 
 
 THRESHOLD = 0.8 # Akurasi minimal 80%
 
-MODEL_PATH = 'action.h5' 
+MODEL_PATH = 'final_lstm_action.h5' 
+# MODEL_PATH = 'best_gesture_model.h5' 
 if not os.path.exists(MODEL_PATH):
     print(f"❌ Error: Model '{MODEL_PATH}' tidak ditemukan!")
     exit()
