@@ -36,7 +36,7 @@ import keras
 from keras.layers import Layer
 import os
 import math
-from Config import actions, sequence_length
+from Config import actionsTesting, sequence_length
 
 # ==================== CUSTOM CLASSES (harus sama persis dengan saat training) ====================
 
@@ -67,10 +67,10 @@ def focal_loss(gamma=2.0, alpha=0.25):
     return loss_fn
 
 # ==================== CONFIGURATION ====================
-ACTIONS   = actions
+ACTIONS   = actionsTesting
 COLORS    = [(245, 117, 16), (117, 245, 16)]
 THRESHOLD = 0.80   # Akurasi minimal 80%
-MODEL_PATH = 'TrainingModel/Training_SIBI_3Class/Models/epoch500/saya_makan_obat.keras'
+MODEL_PATH = 'TrainingModel/Training_3Class/Models/epoch500/saya_makan_obat.keras'
 
 if not os.path.exists(MODEL_PATH):
     print(f"❌ Error: Model '{MODEL_PATH}' tidak ditemukan!")
