@@ -1,0 +1,45 @@
+============================================================
+        RINGKASAN HASIL TRAINING — SIBI
+============================================================
+  Arsitektur    : BiLSTM + Attention + Focal Loss
+  Kelas         : Saya, Makan, Obat, Agar, Kuat, Buah, Sayur
+  Jumlah Kelas  : 7
+  Total data    : 10500 (setelah augmentasi 5x)
+  Fitur/frame   : 258
+  Sequence len  : 45 frame @ 30fps = 1.5 detik
+------------------------------------------------------------
+  Train / Val / Test : 7350 / 1575 / 1575
+------------------------------------------------------------
+  Test Accuracy : 99.94%
+  Test Loss     : 0.0008
+  Macro F1      : 0.9994
+  Weighted F1   : 0.9994
+  Macro P       : 0.9994
+  Macro R       : 0.9994
+------------------------------------------------------------
+  Epoch terbaik (val_accuracy) : 40
+  Epoch terbaik (val_loss)     : 178
+  Total epoch berjalan         : 200
+  Val Accuracy terbaik         : 100.00%
+  Val Loss terbaik             : 0.0004
+------------------------------------------------------------
+  Per-Class Metrics:
+  Kelas           Precision     Recall   F1-Score    Support
+  --------------------------------------------------
+  Saya               1.0000     0.9956     0.9978        225
+  Makan              1.0000     1.0000     1.0000        225
+  Obat               1.0000     1.0000     1.0000        225
+  Agar               1.0000     1.0000     1.0000        225
+  Kuat               1.0000     1.0000     1.0000        225
+  Buah               1.0000     1.0000     1.0000        225
+  Sayur              0.9956     1.0000     0.9978        225
+------------------------------------------------------------
+  File Output:
+  - Epoch200/model5class.keras
+  Plot:
+  - plot_distribusi_split.png
+  - plot_training_curve.png
+  - plot_confusion_matrix.png
+  - plot_per_class_metrics.png
+  - plot_confidence.png
+============================================================

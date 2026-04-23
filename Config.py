@@ -59,7 +59,8 @@ list_kata = np.array([
 
 # Untuk Collect, Testing dan Training
 actions = np.array(['Saya', 'Buah', 'Kuat', 'Agar', 'Makan', 'Sayur', 'Ibu', 'An', 'Sabar', 'Siap', 'Gelas', 'Obat', 'Kakak', 'Rajin', 'Harus', 'Kan', 'Kue', 'Untuk', 'Tamu', 'Cerita', 'Tentang', 'Malam', 'Keluarga', 'Bapak', 'Siram']);
-actionsTesting = np.array(['Saya', 'Makan', 'Obat']);
+# actions = np.array(['', '', '', '', '', '', '', '', 'Sabar', 'Siap', 'Gelas', '', 'Kakak', 'Rajin', 'Harus', 'Kan', 'Kue', 'Untuk', 'Tamu', 'Cerita', 'Tentang', 'Malam', 'Keluarga', 'Bapak', 'Siram']);
+actionsTesting = np.array(['Saya', 'Makan', 'Obat', 'Agar', 'Kuat', 'Buah', 'Sayur', 'Ibu', 'An']);
 
 
 # 3. Jumlah Video & Frame

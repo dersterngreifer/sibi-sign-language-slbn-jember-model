@@ -1,0 +1,47 @@
+============================================================
+        RINGKASAN HASIL TRAINING — SIBI
+============================================================
+  Arsitektur    : BiLSTM + Attention + Focal Loss
+  Kelas         : Saya, Makan, Obat, Agar, Kuat, Buah, Sayur, Ibu, An
+  Jumlah Kelas  : 9
+  Total data    : 13500 (setelah augmentasi 5x)
+  Fitur/frame   : 258
+  Sequence len  : 45 frame @ 30fps = 1.5 detik
+------------------------------------------------------------
+  Train / Val / Test : 9450 / 2025 / 2025
+------------------------------------------------------------
+  Test Accuracy : 99.90%
+  Test Loss     : 0.0011
+  Macro F1      : 0.9990
+  Weighted F1   : 0.9990
+  Macro P       : 0.9990
+  Macro R       : 0.9990
+------------------------------------------------------------
+  Epoch terbaik (val_accuracy) : 24
+  Epoch terbaik (val_loss)     : 250
+  Total epoch berjalan         : 250
+  Val Accuracy terbaik         : 100.00%
+  Val Loss terbaik             : 0.0003
+------------------------------------------------------------
+  Per-Class Metrics:
+  Kelas           Precision     Recall   F1-Score    Support
+  --------------------------------------------------
+  Saya               1.0000     1.0000     1.0000        225
+  Makan              1.0000     1.0000     1.0000        225
+  Obat               1.0000     1.0000     1.0000        225
+  Agar               1.0000     0.9956     0.9978        225
+  Kuat               1.0000     1.0000     1.0000        225
+  Buah               0.9912     1.0000     0.9956        225
+  Sayur              1.0000     1.0000     1.0000        225
+  Ibu                1.0000     0.9956     0.9978        225
+  An                 1.0000     1.0000     1.0000        225
+------------------------------------------------------------
+  File Output:
+  - Epoch250/model9class.keras
+  Plot:
+  - plot_distribusi_split.png
+  - plot_training_curve.png
+  - plot_confusion_matrix.png
+  - plot_per_class_metrics.png
+  - plot_confidence.png
+============================================================

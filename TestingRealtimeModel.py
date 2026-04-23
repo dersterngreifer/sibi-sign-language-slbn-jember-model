@@ -68,9 +68,30 @@ def focal_loss(gamma=2.0, alpha=0.25):
 
 # ==================== CONFIGURATION ====================
 ACTIONS   = actionsTesting
-COLORS    = [(245, 117, 16), (117, 245, 16)]
+COLORS = [
+    (245, 117,  16),   # 1  - Orange
+    (117, 245,  16),   # 2  - Hijau
+    ( 16, 117, 245),   # 3  - Biru
+    (245,  16, 117),   # 4  - Pink
+    ( 16, 245, 245),   # 5  - Cyan
+    (245, 245,  16),   # 6  - Kuning
+    (180,  16, 245),   # 7  - Ungu
+    (245,  16,  16),   # 8  - Merah
+    ( 16, 245, 117),   # 9  - Hijau Muda
+    (117,  16, 245),   # 10 - Indigo
+    (245, 180,  16),   # 11 - Kuning Tua
+    ( 16, 245, 180),   # 12 - Tosca
+    (245,  16, 180),   # 13 - Magenta
+    ( 16, 180, 245),   # 14 - Biru Muda
+    (180, 245,  16),   # 15 - Lime
+    (245, 100, 100),   # 16 - Salmon
+    (100, 245, 200),   # 17 - Mint
+    (200, 100, 245),   # 18 - Lavender
+    (245, 200, 100),   # 19 - Peach
+    (100, 200, 245),   # 20 - Sky Blue
+]
 THRESHOLD = 0.80   # Akurasi minimal 80%
-MODEL_PATH = 'TrainingModel/Training_3Class/Models/epoch500/saya_makan_obat.keras'
+MODEL_PATH = 'TrainingModel/Training9Class/epoch250/model9class.keras'
 
 if not os.path.exists(MODEL_PATH):
     print(f"❌ Error: Model '{MODEL_PATH}' tidak ditemukan!")
@@ -269,7 +290,7 @@ STABILITY_FRAMES = 12
 JARAK_KALIBRASI  = 60   # cm — jarak saat kalibrasi bahu
 focal_length     = None
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(cv2.CAP_PROP_FPS, 30)
 # ✅ DIPERBAIKI: resolusi sama dengan pengambilan dataset (1280x720)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH,  1280)
