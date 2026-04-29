@@ -11,17 +11,17 @@
   Train / Val / Test : 5250 / 1125 / 1125
 ------------------------------------------------------------
   Test Accuracy : 100.00%
-  Test Loss     : 0.0023
+  Test Loss     : 0.0011
   Macro F1      : 1.0000
   Weighted F1   : 1.0000
   Macro P       : 1.0000
   Macro R       : 1.0000
 ------------------------------------------------------------
-  Epoch terbaik (val_accuracy) : 24
+  Epoch terbaik (val_accuracy) : 65
   Epoch terbaik (val_loss)     : 200
   Total epoch berjalan         : 200
   Val Accuracy terbaik         : 100.00%
-  Val Loss terbaik             : 0.0004
+  Val Loss terbaik             : 0.0003
 ------------------------------------------------------------
   Per-Class Metrics:
   Kelas           Precision     Recall   F1-Score    Support

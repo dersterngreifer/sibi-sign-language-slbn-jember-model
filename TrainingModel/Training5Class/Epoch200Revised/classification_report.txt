@@ -1,5 +1,5 @@
-Test Accuracy : 99.94%
-Test Loss     : 0.0008
+Test Accuracy : 100.00%
+Test Loss     : 0.0028
 
               precision    recall  f1-score   support
 
@@ -8,9 +8,7 @@ Test Loss     : 0.0008
         Obat       1.00      1.00      1.00       225
         Agar       1.00      1.00      1.00       225
         Kuat       1.00      1.00      1.00       225
-        Buah       1.00      1.00      1.00       225
-       Sayur       1.00      1.00      1.00       225
 
-    accuracy                           1.00      1575
-   macro avg       1.00      1.00      1.00      1575
-weighted avg       1.00      1.00      1.00      1575
+    accuracy                           1.00      1125
+   macro avg       1.00      1.00      1.00      1125
+weighted avg       1.00      1.00      1.00      1125
